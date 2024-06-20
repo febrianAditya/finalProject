@@ -13,7 +13,7 @@ const App = () => {
   const { movies, loading, error } = useSelector((state) => state.movies);
 
   useEffect(() => {
-    dispatch(getMovies('Anime'));
+    dispatch(getMovies('cold'));
   }, [dispatch]);
 
   const handleSearch = (query) => {
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <Header onSearch={handleSearch} /> {/* Header di sini */}
+        <Header onSearch={handleSearch} /> 
         <main>
           <Routes>
             <Route path="/" element={<HomePage movies={movies} loading={loading} error={error} />} />
