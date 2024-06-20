@@ -12,3 +12,4 @@ export const fetchMovieDetails = async (id) => {
   const data = await response.json();
   return data;
 };
+

@@ -4,7 +4,7 @@ import '../styles/MovieList.css';
 
 const MovieList = ({ movies }) => {
   return (
-    <div className="row movie-list"> {/* Gunakan kelas Bootstrap untuk grid */}
+    <div className="row movie-list"> 
       {movies.map(movie => (
         <MovieCard key={movie.imdbID} movie={movie} />
       ))}

@@ -4,13 +4,12 @@ const initialState = {
     error: null,
   };
   
-  const movieReducer = (state = initialState, action) => {
+  export const movieReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'FETCH_MOVIES_REQUEST':
         return {
           ...state,
           loading: true,
-          error: null,
         };
       case 'FETCH_MOVIES_SUCCESS':
         return {

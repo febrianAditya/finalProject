@@ -1,4 +1,4 @@
-import { fetchMovies } from '../../services/api';
+import { fetchMovies, fetchMovieDetails } from '../../services/api';
 
 export const fetchMoviesRequest = () => {
   return {
